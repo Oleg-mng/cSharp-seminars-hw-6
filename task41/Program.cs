@@ -15,7 +15,6 @@ void Fillarraytom (int [] arr)
         arr[i] = Convert.ToInt32(Console.ReadLine());
     }
 }
-Fillarraytom(array);
 int Countpositivenumbers(int[] array)
 {
     int count = 0;
@@ -28,5 +27,6 @@ int Countpositivenumbers(int[] array)
     }
     return count;
 }
+Fillarraytom(array);
 int positive = Countpositivenumbers(array);
 System.Console.WriteLine($"количество положительных чисел: {positive}");
