@@ -9,6 +9,14 @@ double b1 = Convert.ToDouble(System.Console.ReadLine());
 double k1 = Convert.ToDouble(System.Console.ReadLine());
 double b2 = Convert.ToDouble(System.Console.ReadLine());
 double k2 = Convert.ToDouble(System.Console.ReadLine());
+void CheckOnParallel (double k1, double k2)
+{
+if ( k1 == k2 )
+{
+        System.Console.WriteLine($" прямые параллельны, пересечения нет, так как k1=k2");
+    }
+}
+CheckOnParallel(k1, k2);
 double x = (b2 - b1) / (k1 - k2);
 double y = k1 * x + b1;
 System.Console.WriteLine($"координаты точки пересечения: ({x}, {y})");
